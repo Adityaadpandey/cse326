@@ -1,0 +1,30 @@
+h3 {
+    color: rgb(187, 0, 255);
+    font-size: 34px;
+    /* font-style: italic; */
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+a[href="6.html"]
+      {
+        color: #f21881;
+        /* background-color: #76f218; */
+      }
+#i1{
+    font-size: 24px;
+    font-style: italic;
+    text-align: left;
+
+    color: #ff00ea;
+}
+#i2{
+    font-size: 24px;
+    font-style: italic;
+    color: #04ff00;
+}
+.nm{
+    font-size: 18px;
+    font-style: italic;
+    color: #ff9900;
+}

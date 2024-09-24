@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar with Sections</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      nav {
+        background-color: #333;
+      }
+
+      .navbar {
+        list-style: none;
+        display: flex;
+        padding: 10px 0;
+      }
+
+      .navbar li {
+        margin: 0 15px;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 15px;
+        transition: background-color 0.3s ease;
+      }
+
+      .navbar a:hover {
+        color:blue
+      }
+
+      .navbar a.active,
+      .navbar a:focus {
+        background-color: #04aa6d; 
+    }
+
+      section {
+        padding: 50px;
+        text-align: center;
+        display: none;
+      }
+
+      .content-section {
+        display: none; 
+      }
+
+      .content-section.active {
+        display: block; }
+      .hidden {
+        display: none;
+      }
+
+      section h1 {
+        font-size: 2.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#home" class="active" data-target="home">Home</a></li>
+        <li><a href="#about" data-target="about">About</a></li>
+        <li><a href="#services" data-target="services">Services</a></li>
+        <li><a href="#contact" data-target="contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="home" class="content-section">
+      <h1>Welcome to Home</h1>
+      <p>This is our Home page
+      </p>
+    </section>
+    <section id="about" class="content-section hidden">
+      <h1>About Us</h1>
+      <p>This is the about us page</p>
+    </section>
+    <section id="services" class="content-section hidden">
+      <h1>Our Services</h1>
+      <p>This is the our sevice page of the website</p>
+    </section>
+    <section id="contact" class="content-section hidden">
+      <h1>Contact Us</h1>
+      <p>This is the contact part of the page</p>
+    </section>
+    <h4>
+        Made by Aditya
+    </h4>
+
+    <script >
+        document.querySelectorAll('.navbar a').forEach(link => {
+  link.addEventListener('click', function(event) {
+    event.preventDefault(); 
+
+    document.querySelectorAll('.navbar a').forEach(item => item.classList.remove('active'));
+
+    this.classList.add('active');
+
+    document.querySelectorAll('.content-section').forEach(section => section.classList.remove('active'));
+
+    const target = this.getAttribute('data-target');
+    document.getElementById(target).classList.add('active');
+  });
+});
+
+    </script>
+  </body>
+</html>
