@@ -7,14 +7,10 @@
     <style>
       body {
         background-image: url("flat-3840x2160-forest-deer-4k-5k-iphone-wallpaper-abstract-11925.jpg");
-        background-repeat: no-repeat; 
-        background-size: cover; 
-         /* background-attachment: fixed; */
-         /* background-position-x: 200; */
+        background-repeat: no-repeat;
+        background-size: cover;
         background-position-y: 300;
         background-clip: scroll;
-
-        /* background-blend-mode:hue; */
       }
       span {
         color: red;
@@ -29,15 +25,46 @@
         font-size: 20px;
         font-family: Georgia, "Times New Roman", Times, serif;
         font-weight: bold;
-        /* background-origin: content-box;
-        background-image: url("macOS\ Sequoia\ Dark.jpg");
-
-        background-size: cover; */
       }
       .n {
         font-style: italic;
         /* font-size: 58px; */
         color: blue;
+      }
+      table {
+        /* border-collapse: collapse; */
+        border: 8px solid rgb(167, 79, 255);
+        letter-spacing: 1px;
+        padding: 10px;
+        font-size: 0.8rem;
+      }
+
+      td,
+      th {
+        margin: 5px;
+        border: 2px solid rgb(111, 0, 255);
+        padding: 10px 20px;
+      }
+
+      th {
+        background-color: rgb(235, 235, 235);
+        font-weight: bold;
+      }
+
+      td {
+        text-align: center;
+      }
+
+      tr:nth-child(even) td {
+        background-color: rgb(218, 218, 218);
+      }
+
+      tr:nth-child(odd) td {
+        background-color: rgb(245, 245, 245);
+      }
+
+      caption {
+        padding: 10px;
       }
     </style>
   </head>
@@ -45,6 +72,59 @@
     <div>
       This is a <span>Intenet Programming</span> Class whose source code is
       <span class="n">CSE326</span>
+    </div>
+
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th colspan="2">Marks</th>
+            <th>Total Marks</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">Aditya</td>
+            <td>CA1</td>
+            <td>88</td>
+            <td>263</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>CA2</td>
+            <td>95</td>
+            <td>275</td>
+            <td>A-</td>
+          </tr>
+          <tr>
+            <td>CA3</td>
+            <td>89</td>
+            <td>272</td>
+            <td>A-</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Yash</td>
+            <td>CA1</td>
+            <td>88</td>
+            <td>263</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>CA2</td>
+            <td>95</td>
+            <td>275</td>
+            <td>A-</td>
+          </tr>
+          <tr>
+            <td>CA3</td>
+            <td>89</td>
+            <td>272</td>
+            <td>A-</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </body>
 </html>
