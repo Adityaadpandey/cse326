@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div{
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        color: white;
+        transition: background-color 0.5s ease-in-out;
+       }
+       p{
+        font-size: 30px;
+        text-align: center;
+       }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 1100px;
+            font-size: 30px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            height: 60px;
+            text-align: left;
+            color:black;
+            padding: 15px;
+        }
+
+        .rd {
+            color: white;
+            background-color: red;
+        }
+
+        .aa {
+            background-color: black;
+            color: white;
+        }
+
+        .rd:hover,.aa:hover {
+            color: pink;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <p>A summary of top sites woth both paid and free course</p>
+   <div>
+    <table>
+        <colgroup>
+            <col span="1" class="asd">
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="aa">Website</th>
+                <th class="rd">Certification</th>
+                <th class="rd">Tution</th>
+                <th class="rd">Top courses</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="rd">Freecode Camp</td>
+                <td>yes</td>
+                <td>free</td>
+                <td>web development and design</td>
+            </tr>
+            <tr>
+                <td class="rd">udemy</td>
+                <td>yes</td>
+                <td>paid</td>
+                <td>python and machine learning</td>
+            </tr>
+            <tr>
+                <td class="rd">coursera</td>
+                <td>yes</td>
+                <td>paid and free</td>
+                <td>IoT and AI</td>
+            </tr>
+            <tr>
+                <td class="rd">total courses</td>
+                <td colspan="3" class="aa">what are you waiting for? get started for free</td>
+            </tr>
+        </tbody>
+    </table>
+   </div>
+
+</body>
+
+</html>

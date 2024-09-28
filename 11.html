@@ -33,10 +33,12 @@
       }
       table {
         /* border-collapse: collapse; */
+        /* background-image: url('macOS.jpg'); */
         border: 8px solid rgb(167, 79, 255);
         letter-spacing: 1px;
         padding: 10px;
         font-size: 0.8rem;
+        border-spacing: 10px;
       }
 
       td,
@@ -55,12 +57,15 @@
         text-align: center;
       }
 
-      tr:nth-child(even) td {
+      /* tr:nth-child(even) td {
         background-color: rgb(218, 218, 218);
       }
 
       tr:nth-child(odd) td {
         background-color: rgb(245, 245, 245);
+      } */
+      td:hover {
+        background-color: rgb(255, 0, 0);
       }
 
       caption {
@@ -75,7 +80,7 @@
     </div>
 
     <div>
-      <table cellspacing="10px">
+      <table >
         <thead>
           <tr>
             <th>Name</th>
