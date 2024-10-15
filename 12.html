@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        center{
+            margin: 0 auto;
+        }
+        /* style this page */
+        label{
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        input[type=text], input[type=email], textarea,input[type="password"] {
+            width: 30%;
+            padding: 10px 10px;
+            color:rgb(0, 0, 0);
+            background-color: rgba(80, 80, 80, 0.168) !important;
+            margin: 8px 0;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        form{
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        input[type=submit], input[type=reset]{
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width:30%;
+        }
+        input[type=submit]:hover, input[type=reset]:hover {
+            background-color: #45a049;
+        }
+        select {
+            width: 20%;
+            /* padding: 12px 20px; */
+            /* margin: 8px 0; */
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        select:focus {
+            outline: none;
+        }
+       
+
+
+    </style>
+</head>
+<body>
+   <center>
+    <form action="" method="post">
+        <label for="email">email</label>
+        <input type="email" id="email"  name="email" placeholder="Write your email" > <br><br>
+        <label for="password">password</label>
+        <input type="password" id="password" name="password">
+        <br><br> 
+        <label for="review">Write a review:</label>
+        <textarea name="review" id="review" rows="2" cols="2"></textarea> 
+        <br><br>
+        <label for="course">Choose your course:</label>
+        <input type="radio" id="btech" name="course" value="btech">
+        <label for="btech">btech</label>
+        <input type="radio" id="ba" name="course" value="ba">
+        <label for="ba">ba</label>
+        <br><br>
+        <label for="state">STATE: </label>
+        <select name="state" id="state" size="2" multiple>
+            <option value="select state">select state</option>
+            <option value="up" selected>UTTAR PRADESH</option>
+            <option value="MP">M PRADESH</option>
+            <option value="Ap">A PRADESH</option>
+            <option value="rajasthan">rajasthan</option>
+        </select>
+        <br><br>
+
+        <label for="files">UPLOAD YOUR FILE: </label>
+        <input type="file" name="files" id="files">
+
+        <br><br>
+
+        <input type="submit" name="su" id="su" value="submit your form">
+        <br>
+        <input type="reset" nam><br> <br>
+
+        <button type="reset"><img src="macOS.jpg" height="40" alt=""></button>
+    </form>
+   </center>
+    
+</body>
+</html>
