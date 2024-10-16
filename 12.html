@@ -14,7 +14,7 @@
             font-size: 18px;
         }
         input[type=text], input[type=email], textarea,input[type="password"] {
-            width: 30%;
+            width: 70%;
             padding: 10px 10px;
             color:rgb(0, 0, 0);
             background-color: rgba(80, 80, 80, 0.168) !important;
@@ -24,8 +24,12 @@
             border: 1px solid #ccc;
             box-sizing: border-box;
         }
+        input[type=text]:focus, input[type=email]:focus, textarea:focus, input[type="password"]:focus {
+            background-color: rgba(80, 80, 80, 0.368) !important;
+            border: 1px solid #ccc;
+        }
         form{
-            width: 50%;
+            width: 40%;
             margin: 0 auto;
             padding: 20px;
             border: 1px solid #ccc;
@@ -45,6 +49,8 @@
         }
         input[type=submit]:hover, input[type=reset]:hover {
             background-color: #45a049;
+            transform: scale(1.1);
+            transition: 1.8;
         }
         select {
             width: 20%;
@@ -63,11 +69,11 @@
     </style>
 </head>
 <body>
-   <center>
+   <!-- <center> -->
     <form action="" method="post">
         <label for="email">email</label>
         <input type="email" id="email"  name="email" placeholder="Write your email" > <br><br>
-        <label for="password">password</label>
+        <label for="password" placeholder="Enter your secret key">password</label>
         <input type="password" id="password" name="password">
         <br><br> 
         <label for="review">Write a review:</label>
@@ -96,11 +102,11 @@
 
         <input type="submit" name="su" id="su" value="submit your form">
         <br>
-        <input type="reset" nam><br> <br>
+        <input type="reset" nam><br> <br>  
 
         <button type="reset"><img src="macOS.jpg" height="40" alt=""></button>
     </form>
-   </center>
+   <!-- </center> -->
     
 </body>
 </html>

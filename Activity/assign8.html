@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(0, 0, 0);
+        margin: 60px;
+      }
+      .con1 {
+        background-color: rgb(0, 0, 0);
+        margin: 0 auto;
+        padding: 20px;
+        width: 60%;
+        border: 5px rgb(30, 229, 255) solid;
+        border-radius: 45px;
+      }
+      .con2 {
+        border: 5px rgb(255, 30, 30) dotted;
+        border-radius: 45px;
+        padding: 20px;
+        margin: 20px;
+        display: grid;
+      }
+      .con20 {
+        border: 5px rgb(118, 118, 118) solid;
+        border-radius: 15px;
+        text-align: center;
+      }
+      .con20 h1 {
+        font-size: 40px;
+        color: white;
+      }
+      .con3 {
+        border: 5px rgb(118, 118, 118) dashed;
+        margin: 20px;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+      }
+      .gx {
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        font-size: 20px;
+        margin: 1px;
+        border: 5px solid white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        transition: background-color 0.5s, color 0.5s;
+      }
+      .gx:hover,
+      .gx-1:hover,
+      .gx-2:hover {
+        color: rgb(136, 255, 0);
+        transition: 0.5s;
+        transform: scale(1.02);
+        cursor: default;
+      }
+      .gx-1 {
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        font-size: 20px;
+        margin: 1px;
+        border-top: 5px solid rgb(255, 255, 255);
+        border-right: 5px solid rgb(255, 255, 255);
+        border-left: 5px solid rgb(255, 255, 255);
+        transition: background-color 0.5s, color 0.5s;
+      }
+      .gx-2 {
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        font-size: 20px;
+        margin: 1px;
+        border-right: 5px solid rgb(255, 255, 255);
+        border-left: 5px solid rgb(255, 255, 255);
+        transition: background-color 0.5s, color 0.5s;
+      }
+      /* #test{ */
+        /* grid-row:2/span 3 */
+      /* } */
+    </style>
+  </head>
+  <body>
+    <div class="con1">
+      <div class="con2">
+        <div class="con20"><h1>Marks Table</h1></div>
+        <div class="con3">
+          <div class="gx">Student</div>
+          <div class="gx">Maths</div>
+          <div class="gx">Physics</div>
+          <div class="gx">Chemistry</div>
+          <div class="gx-1">Name</div>
+          <div class="gx-1">54</div>
+          <div class="gx-1" id="test">32</div>
+          <div class="gx-1">23</div>
+          <div class="gx-2">Name</div>
+          <div class="gx-2">54</div>
+          <div class="gx-2">32</div>
+          <div class="gx-2">23</div>
+          <div class="gx-2">Name</div>
+          <div class="gx-2">54</div>
+          <div class="gx-2">32</div>
+          <div class="gx-2">23</div>
+          <div class="gx-2">Name</div>
+          <div class="gx-2">54</div>
+          <div class="gx-2">32</div>
+          <div class="gx-2">23</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
