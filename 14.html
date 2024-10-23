@@ -25,11 +25,15 @@
         document.write("<br/>")
         document.write(d!==a);
         document.write("<br/>");
-        document.write(d||a);
+        document.write(d>a||a>b);
         document.write("<br/>");
-        document.write(a && b);
+        document.write(a<d && b==d);
         document.write("<br/>");
         document.write(!b);
+        document.write("<br/>")
+        const age = 19
+        const status = age>=18?"Adult":"Child";
+        document.write(status)
     </script>
 </body>
 </html>
