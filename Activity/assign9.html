@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .frm {
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 500px;
+        width: 30%;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px #828282;
+        border-radius: 10px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(87, 87, 87);
+      }
+      h1 {
+        text-align: center;
+        color: #000000;
+        font-size: 40px;
+      }
+      input,
+      select,
+      textarea {
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: #45a049;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frm">
+      <form action="" method="post">
+        <h1>Registeration Form</h1>
+        <label for="name">Name</label>
+
+        <input type="text" name="name" id="name" required />
+        <br />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+        <br />
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required />
+        <br />
+        <label for="gender">Gender</label>
+        <select name="Gender" id="">
+          <option value="">Select</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <br />
+        <label for="bio">Bio</label>
+        <textarea name="bio" id="bio" rows="5"> </textarea>
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
