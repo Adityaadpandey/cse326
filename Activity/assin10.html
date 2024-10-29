@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #c50606;
+      }
+      .container {
+        margin: auto;
+        overflow: hidden;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+      .box {
+        /* display: flex; */
+        justify-content: space-between;
+        margin: 20px 0;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+      .box1 {
+        padding: 10px;
+        margin: 10px;
+        background-color: #f4f4f4;
+        border: 1px solid #333;
+        /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+      }
+      .tble {
+        margin: 20px 0;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+      .tble h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #333;
+        padding: 10px;
+      }
+      th {
+        background-color: #d7d4d4;
+        color: #333;
+        text-align: start;
+      }
+      input[type="text"],
+      input[type="email"] {
+        width: 20%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #333;
+      }
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin: 10px;
+      }
+
+      .cos {
+        border: 1px solid #ff3838;
+        margin: 10px;
+        padding: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>About me</h2>
+      <p>
+        Hello, I'm Aditya a passionate web developer with a love for creating
+        beautiful and functional websites. I have experience in HTML, CSS,
+        JavaScript, and more
+      </p>
+    </div>
+    <div class="box">
+      <h2>My Projects</h2>
+      <div class="box1">
+        <h3>Project 1</h3>
+        <p>
+          A desc of Project 1. Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Reprehenderit tempore
+        </p>
+      </div>
+      <div class="box1">
+        <h3>Project 2</h3>
+        <p>
+          A desc of Project 2. Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Reprehenderit tempore
+        </p>
+      </div>
+    </div>
+    <div class="tble">
+      <h2>Project Statistics</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Technologies</th>
+            <th>Completion Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Project 1</td>
+            <td>HTML CSS JS</td>
+            <td>June 16</td>
+          </tr>
+          <tr>
+            <td>Project 2</td>
+            <td>React, NodeJs</td>
+            <td>Aug 5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="">
+        <label for="name">Name</label>
+        <br />
+        <input type="text" id="name" name="name" />
+        <br />
+        <label for="email">Email</label>
+        <br />
+        <input type="email" id="email" name="email" />
+        <br />
+
+        <div class="cos">
+          <label for="label">Prefered Contact Method</label>
+
+          <br />
+          <input type="radio" name="Email" id="e-mail" />
+          <label for="e-mail">Email</label>
+          <input type="radio" name="Phone" id="phone" />
+          <label for="phone">Phone</label>
+        </div>
+        <br />
+        <input type="checkbox" name="Subscribe to newsletter" id="subscribe" />
+        <label for="subscribe">Subscribe to newsletter</label>
+      </form>
+    </div>
+  </body>
+</html>
