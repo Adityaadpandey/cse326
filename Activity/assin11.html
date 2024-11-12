@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f2f2f2;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input {
+            width: 95%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input:focus {
+            border-color: #666;
+        }
+        input[type="button"] {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            width:30%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        <label for="msg" id="ms1" style="display: none;">Name must be at least 3 charsters long</label>
+        <label for="msg" id="mss1" style="display: none;">Looks Good!</label>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="mail">
+        <label for="msg" id="ms2" style="display: none;">Enter a Valid Mail</label>
+        <label for="msg" id="mss2" style="display: none;">Valid Mail!</label>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="pass">
+        <label for="msg" id="ms3" style="display: none;">Password must be at least 6 characters long</label>
+        <label for="msg" id="mss3" style="display: none;">Strong Password!</label>
+        <br>
+        <input type="button" value="Submit">
+    </form>
+    <script>
+        const name = document.getElementById('name');
+        const msg1 = document.getElementById('ms1');
+        const mssg1 = document.getElementById('mss1');
+        const msg2 = document.getElementById('ms2');
+        const mssg2 = document.getElementById('mss2');
+        const msg3 = document.getElementById('ms3');
+        const mssg3 = document.getElementById('mss3');
+        const email = document.getElementById('mail');
+        const password = document.getElementById('pass');
+
+
+        name.addEventListener('input', () => {
+            if (name.value.length >= 3) {
+                name.style.border = '1px solid green';
+                msg1.style.display = 'none';
+                mssg1.style.display = 'block';
+                mssg1.style.color = 'green';
+
+            } else {
+                name.style.border = '1px solid red';
+                msg1.style.display = 'block';
+                msg1.style.color ='red';
+                mssg1.style.display = 'none'
+            }
+        });
+        email.addEventListener('input', () => {
+            if (email.value.includes('@') && email.value.includes('.')) {
+                email.style.border = '1px solid green';
+                msg2.style.display = 'none';
+                mssg2.style.display = 'block';
+                mssg2.style.color = 'green';
+
+            } else {
+                email.style.border = '1px solid red';
+                msg2.style.display = 'block';
+                msg2.style.color ='red';
+                mssg2.style.display = 'none'
+            }
+        });
+        password.addEventListener('input', () => {
+            if (password.value.length >= 5) {
+                password.style.border = '1px solid green';
+                msg3.style.display = 'none';
+                mssg3.style.display = 'block';
+                mssg3.style.color = 'green';
+
+            } else {
+                password.style.border = '1px solid red';
+                msg3.style.display = 'block';
+                msg3.style.color ='red';
+                mssg3.style.display = 'none'
+            }
+        });
+    </script>
+</body>
+</html>
