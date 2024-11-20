@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        color: red;
+      }
+      /* div {
+        color: blue;
+        border: 2px solid black;
+        padding: 10px;
+        margin: 10px;
+      } */
+    </style>
+  </head>
+  <body>
+    <p id="p1" class="para">Para 1</p>
+    <p id="p2" class="para">Para 2</p>
+    <p id="p3" class="para">Para 3</p>
+    <p id="p4" class="para">Para 4</p>
+    <!-- <script>
+
+      let para = document.createElement("p");
+      para.textContent = "This is a paragraph";
+      document.body.appendChild(para);
+
+      let t1 = document.createTextNode(
+        "iaj o;irdlngaieprhameogih aerpo ghapog aelgnvol;kaee"
+      );
+      document.body.appendChild(t1);
+
+      let div = document.createElement("div");
+      let span = document.createElement("span");
+      span.textContent = "element";
+      //   document.body.appendChild(span);
+      div.setAttribute("style", "background-color: yellow; color: blue; font-weight: bold; padding: 10px; margin: 10px; border: 2px solid black;");
+     
+
+      div.textContent = `This is a div ${span} with some text`;
+      document.body.appendChild(div);
+    </script> -->
+    <script>
+        let p2 = document.getElementById("p2");
+        p2.innerHTML = "This is a paragraph with some text";
+        let ele = document.getElementsByClassName("para");
+        console.log(ele);
+        
+        for (let i = 0; i < ele.length; i++) {
+            if (i%2 == 0){
+                ele[i].style.color = "red";
+                ele[i].innerHTML = `This is a paragraph with even index ${i}`;
+            }
+            else{
+                ele[i].style.color = "blue";
+                ele[i].innerHTML = `This is a paragraph with odd index ${i}`;
+            }
+        }
+        let eles = document.getElementsByTagName("p");
+        for (let i = 0; i < eles.length; i++) {
+            eles[i].style.border = "2px solid black";
+            eles[i].style.padding = "10px";
+            eles[i].style.margin = "10px";
+        }
+
+    </script>
+  </body>
+</html>
